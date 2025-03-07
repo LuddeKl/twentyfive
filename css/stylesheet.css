@@ -1,0 +1,79 @@
+#container {
+    padding: 0;
+    margin: 0;
+    display:grid;
+    height:100vh;
+    
+    grid-template-rows: 12% 15% 7% auto 10%; 
+    grid-template-columns: 100%;
+    grid-template-areas:
+    'hd'
+    'sc1'
+    'sc2'
+    'sc3'
+    'ft'; }
+
+
+
+
+
+@media screen and (max-width: 425px) {
+
+    header {
+        grid-area: 'hd';
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: black;
+        height: 100%;
+        gap: 40px;
+
+    }
+
+    #section1 {
+        grid-area: sc1;
+        padding: 15px;
+        border-radius: 9px;
+
+
+    }
+
+    #section2 {
+        grid-area: sc2;
+        text-align: center;
+
+
+    }
+    
+    #section3 {
+        grid-area: sc3;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 35px;
+
+    }
+
+    .Spelkort {
+        width: 120px;
+        height: 120px;
+        padding: 10px;
+        border-radius: 10px;
+
+    }
+    }
+
+
+
+
+#center {
+    margin: 0;
+}
+
+.material-symbols-outlined {
+    cursor: pointer;
+
+}
