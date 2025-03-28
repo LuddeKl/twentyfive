@@ -61,6 +61,10 @@
     'sc3'
     'ft'; }
     
+    html, body {
+        margin: 0;
+        padding: 0;
+    }
 
 
 
@@ -377,6 +381,38 @@
 
     }
     
+    #sectionP2{
+        grid-area: 'sc2';
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    #ProfileSettings{
+        padding-top: 5px;
+        padding-bottom: 5px;
+
+
+    }
+
+    #ToggleDarkMode{
+        padding-top: 5px;
+        padding-bottom: 5px;
+
+
+    }
+
+    #ProfileStats{
+        padding-top: 5px;
+        padding-bottom: 5px;
+
+
+    }
 }
 
 
@@ -388,3 +424,4 @@
     cursor: pointer;
 
 }
+
