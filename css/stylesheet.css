@@ -74,7 +74,7 @@
 
 
     header {
-        grid-area: 'hd';
+        grid-area: hd;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -87,7 +87,7 @@
     }
 
     #section1 {
-        grid-area: 'sc1';
+        grid-area: sc1;
         padding: 15px;
         border-radius: 9px;
 
@@ -95,14 +95,14 @@
     }
 
     #section2 {
-        grid-area: 'sc2';
+        grid-area: sc2;
         text-align: center;
 
 
     }
     
     #section3 {
-        grid-area: 'sc3';
+        grid-area: sc3;
         text-align: center;
         display: flex;
         flex-direction: row;
@@ -122,7 +122,7 @@
 
 
     #sectionR1 {
-        grid-area: 'sc1';
+        grid-area: sc1;
         margin-top: 5%;
         margin-left: 8%;
         margin-right: 8%;
@@ -137,7 +137,7 @@
     }
 
     #sectionR2 {
-        grid-area: 'sc2';
+        grid-area: sc2;
         display: flex;
         padding-left: 5%;
         padding-right: 5%;
@@ -152,13 +152,13 @@
     }
 
     #sectionR3 {
-        grid-area: 'sc3';
+        grid-area: sc3;
         margin: 2%;
         background-color: lightgray;
     }
 
     #sectionR4 {
-        grid-area: 'sc4';
+        grid-area: sc4;
         flex-wrap: wrap;
         flex-direction: row;
         display: flex;
@@ -177,7 +177,7 @@
     .roll {
         width: 1px;
         background-color: black;
-        grid-area: 'sc1';
+        grid-area: sc1;
         
     }
 
@@ -276,7 +276,7 @@
     }
 
     #sectionL1 {
-        grid-area: 'sc1';
+        grid-area: sc1;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -285,7 +285,7 @@
     }
     
     #sectionL2 {
-        grid-area: 'sc2';
+        grid-area: sc2;
         background-color: lightgrey;
         margin: 7px;
         justify-items: start;
@@ -295,7 +295,7 @@
     }
 
     #sectionL3 {
-        grid-area: 'sc3';
+        grid-area: sc3;
         background-color: lightgrey;
         margin: 7px;
         justify-items: start;
@@ -305,7 +305,7 @@
     }
 
     #sectionL4 {
-        grid-area: 'sc4';
+        grid-area: sc4;
         background-color: lightgrey;
         margin: 7px;
         justify-items: start;
@@ -315,7 +315,7 @@
     }
     
     #sectionL5 {
-        grid-area: 'sc5';
+        grid-area: sc5;
         background-color: lightgray;
         margin: 7px;
         justify-items: start;
@@ -333,7 +333,7 @@
     }
 
     #sectionP1 {
-        grid-area: 'sc1';
+        grid-area: sc1;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -383,7 +383,7 @@
     }
     
     #sectionP2{
-        grid-area: 'sc2';
+        grid-area: sc2;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -421,6 +421,11 @@
 
 
     }
+
+    .desktop-only {
+        display: none;
+    }
+
 }
 
 
@@ -430,20 +435,22 @@
 
 .material-symbols-outlined {
     cursor: pointer;
-
+    display: inline-block;
 }
 
 
 @media screen and (min-width: 426px) {
 
+    .phone {
+        display: none;
+    }
 
-
-#container5 {
+#container4 {
     padding: 0;
     margin: 0;
     display:grid;
     height:100vh;
-
+    
     grid-template-rows: 12% 18% 5% auto auto; 
     grid-template-columns: 15% 65% 20%;
     grid-template-areas:
@@ -459,8 +466,41 @@
 }
 
 
+header {
+    grid-area: hd;
+    display: flex;
+    width: 100%;
+    background-color: #606060;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+#RegisterButton {
+    width: 160px;
+    background-color: #3D3D3D;
+    height: 35px;
+    border-radius: 30px;
+    align-content: center;
+    text-align: center;
+    margin-right: 30px;
+    color: white;
+    font-size: 25px;
+}
+
+#SignInButton{
+    color: white;
+    padding-right: 10px;
+    font-size: 20px;
+
+}
+
+#AsideLeft {
+    grid-area: as1;
+    background-color: #737373;
+    height: 100%;
 
 
+}
 
 
 
