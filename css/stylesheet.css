@@ -518,8 +518,8 @@ header {
     grid-area: as2;
     background-color: #737373;
     height: 100%;
-
-
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 
