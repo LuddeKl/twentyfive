@@ -79,10 +79,11 @@
         justify-content: center;
         align-items: center;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        color: black;
-        background-color: gainsboro;
+        color: rgb(248, 248, 248);
+        background-color: #606060c0 !important;
         height: 100%;
         gap: 40px;
+
 
     }
 
@@ -166,15 +167,31 @@
         margin-top: 15px;
     }
 
-    .latestroll {
+    .latestrollred {
         width: 20px;
         height: 20px;
         border-radius: 5px;
-        background-color: gray;
+        background-color: red;
         
     }
 
-    .roll {
+    .latestrollgreen {
+        width: 20px;
+        height: 20px;
+        border-radius: 5px;
+        background-color: rgb(26, 210, 26);
+        
+    }
+    
+    .latestrollblack {
+        width: 20px;
+        height: 20px;
+        border-radius: 5px;
+        background-color: black;
+        
+    }
+
+    .rollbar {
         width: 1px;
         background-color: black;
         grid-area: sc1;
@@ -197,7 +214,7 @@
         flex-direction: row; 
         height: 19px ;
         overflow: hidden; 
-        gap: 5%; 
+        gap: 2%; 
         align-items: center;
         justify-content: center;
         flex-wrap: nowrap;
@@ -208,16 +225,16 @@
     .AdjustBetBox {
         display: flex;
         justify-content: center;
-        height: 19px;
-        width: 50px; 
+        height: 30px;
+        width: 60px; 
         border-radius: 10px;
         background-color: gray;
-
+        align-items: center;
     }
 
     #BetAmount {
         display: flex;
-        height: 40px;
+        height: 50px;
         margin-left: 30px;
         margin-right: 30px;
         margin-top: 20px;
@@ -241,13 +258,14 @@
     }
 
     .HalfDouble {
-        height: 20px;
+        height: 40px;
         width: 140px;
         background-color: gray;
         border-radius: 5px;
-        padding-left: 7px;
-        padding-top: 2px;
+        padding-left:10px;
         color: white;
+        align-content: center;
+
         
     }
 
@@ -280,7 +298,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        
+        color: rgba(255, 23, 23, 0.89);
+        gap: 5px;
 
     }
     
@@ -326,7 +345,7 @@
     }
 
     #leaderboard{
-        color: red;
+        color: rgba(255, 23, 23, 0.89);
         font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         font-weight: lighter;
         font-size: xx-large;
@@ -397,29 +416,34 @@
     }
 
     #ProfileSettings{
-        padding-top: 5px;
-        padding-bottom: 5px;
         display: flex;
         flex-direction: row;
         align-items: center;
         padding-left: 30px;
+        height: 40px;
+        padding-top: 15px;
         gap: 8px;
-        
-        
     }
 
     #ToggleDarkMode{
-        padding-top: 5px;
-        padding-bottom: 5px;
-
-
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-left: 30px;
+        height: 40px;
+        padding-top:15px;
+        gap: 8px;
     }
 
     #ProfileStats{
-        padding-top: 5px;
-        padding-bottom: 5px;
-
-
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-left: 30px;
+        height: 40px;
+        padding-top:15px;
+        gap: 8px;
+        padding-bottom: 15px;
     }
 
     .desktop-only {
@@ -437,6 +461,9 @@
     cursor: pointer;
     display: inline-block;
 }
+
+
+
 
 
 @media screen and (min-width: 426px) {
@@ -507,7 +534,7 @@ header {
     height:fit-content;
     background-color: #606060;
     flex-direction: column;
-    width: 160px;
+    width: 80%;
     margin-top:100px;
     border-radius: 10px;
     align-self: center;
