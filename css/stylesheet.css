@@ -452,7 +452,7 @@
     height:100vh;
     
     grid-template-rows: 12% 18% 5% auto auto; 
-    grid-template-columns: 15% 65% 20%;
+    grid-template-columns: 10% 70% 20%;
     grid-template-areas:
     'hd hd hd'
     'as1 mn as2'
@@ -495,7 +495,27 @@ header {
 }
 
 #AsideLeft {
+    display: flex;
     grid-area: as1;
+    background-color: #737373;
+    height: 100%;
+    flex-direction: column;
+}
+
+#AccountNav {
+    display: flex;
+    height:fit-content;
+    background-color: #606060;
+    flex-direction: column;
+    width: 160px;
+    margin-top:100px;
+    border-radius: 10px;
+    align-self: center;
+}
+
+#AsideRight {
+    display: flex;
+    grid-area: as2;
     background-color: #737373;
     height: 100%;
 
@@ -503,10 +523,26 @@ header {
 }
 
 
+#SendChat{
+    display: flex;
+    flex-direction: row;
+    background-color: #B8B8B8;
+    width: 90%;
+    height: 35px;
+    align-self: flex-end;
+    margin: 5%;
+    border-radius: 10px;
+    color: #565656;
+    align-items: center;
+}
 
-
-
-
+#ToggleChat{
+    color: #3D3D3D;
+    display: flex;
+    height:24px;
+    margin-top: 25px;
+    align-self: flex-start;
+}
 
 
 

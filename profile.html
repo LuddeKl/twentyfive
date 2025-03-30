@@ -10,16 +10,41 @@
 </head>
 <body id="container4">
   <header>
-    <div class="material-symbols-outlined phone" style="font-size: 36px;">menu</div>
+    <span class="material-symbols-outlined phone" style="font-size: 36px;">menu</span>
     <h1 id="center" class="phone">Gambling</h1>
-    <div class="material-symbols-outlined phone" style="font-size: 36px;">account_circle</div>
+    <span class="material-symbols-outlined phone" style="font-size: 36px;">account_circle</span>
     
-    <div id="RegisterButton" class="desktop-only">Register</div>
+    <span id="RegisterButton" class="desktop-only">Register</span>
     <h2 id="SignInButton" class="desktop-only">Sign in</h2>
   </header>
   
-  <aside id="AsideLeft"></aside>
-  <aside id="AsideRight"></aside>
+  <aside id="AsideLeft">
+    <span class="material-symbols-outlined" style="font-size: 36px; padding-top:20px; padding-left: 10px; height:fit-content;">menu</span>
+    <div id="AccountNav">
+      <h2>Account</h2>
+      <h2>Settings</h2>
+    </div>
+  </aside>
+  
+
+  <aside id="AsideRight">
+
+    <div id="ToggleChat">
+      <span class="material-symbols-outlined" style="width: 17px;">chevron_right</span>
+      <span class="material-symbols-outlined">chat_bubble</span>
+
+    </div>
+
+
+
+    <div id="SendChat">
+      <h2 style="padding-left:10px;">Chat</h2>
+      <span class="material-symbols-outlined" style="margin-left: auto; margin-right: 5px;">send</span>
+    </div>
+
+
+  </aside>
+
 
   <section id="sectionP1" class="phone">
     <div class="material-symbols-outlined" style="font-size: 132px;">account_circle</div>
@@ -27,17 +52,18 @@
       <h2 class="ProfileName">Namn</h2>
       <h3 class="ProfileEmail">NamnNamnsson@gmail.com</h3>
     </div>
+    
     <div id="EditProfile">Edit Profile</div>
   
-    <div id="sectionP2">
+    <section id="sectionP2">
       <div id="ProfileSettings">
         <span class="material-symbols-outlined">settings</span>
         <h1>Settings</h1>
       </div>
-      <div id="ToggleDarkMode">Dark Mode</div>
-      <div id="ProfileStats">Stats</div>
-    </div>
-  </section>
+        <div id="ToggleDarkMode">Dark Mode</div>
+        <div id="ProfileStats">Stats</div>      
+    </section>
+
 </body>
 </html>
 
