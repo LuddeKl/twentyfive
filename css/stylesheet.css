@@ -1,456 +1,8 @@
 
-
-@media screen and (max-width: 425px) {
-
-    #container1 {
-        padding: 0;
-        margin: 0;
-        display:grid;
-        height:100vh;
-        
-        grid-template-rows: 12% 15% 7% auto 10%; 
-        grid-template-columns: 100%;
-        grid-template-areas:
-        'hd'
-        'sc1'
-        'sc2'
-        'sc3'
-        'ft'; }
-    
-    #container2 {
-        padding: 0;
-        margin: 0;
-        display:grid;
-        height:100vh;
-            
-        grid-template-rows: 12% 100px 50px 250px auto auto; 
-        grid-template-columns: 100%;
-        grid-template-areas:
-        'hd'
-        'sc1'
-        'sc2'
-        'sc3'
-        'sc4'
-        'ft'; }
-    
-    #container3 {
-        padding: 0;
-        margin: 0;
-        display:grid;
-        height:100vh;
-                
-        grid-template-rows: 12% 100px 75px 75px 75px auto auto; 
-        grid-template-columns: 100%;
-        grid-template-areas:
-        'hd'
-        'sc1'
-        'sc2'
-        'sc3'
-        'sc4'
-        'sc5'
-        'ft'; }
-    
-    #container4 {
-        padding: 0;
-        margin: 0;
-        display:grid;
-        height:100vh;
-                    
-        grid-template-rows: 12% auto auto auto auto; 
-        grid-template-columns: 100%;
-        grid-template-areas:
-        'hd'
-        'sc1'
-        'sc2'
-        'sc3'
-        'ft'; }
-        
-    html, body {
-        margin: 0;
-        padding: 0;
-    }
-
-
-
-
-    header {
-        grid-area: hd;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        color: rgb(248, 248, 248);
-        background-color: #606060c0 !important;
-        height: 100%;
-        gap: 40px;
-
-
-    }
-
-    #section1 {
-        grid-area: sc1;
-        padding: 15px;
-        border-radius: 9px;
-
-
-    }
-
-    #section2 {
-        grid-area: sc2;
-        text-align: center;
-
-
-    }
-    
-    #section3 {
-        grid-area: sc3;
-        text-align: center;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 35px;
-
-    }
-
-    .Spelkort {
-        width: 120px;
-        height: 120px;
-        padding: 10px;
-        border-radius: 10px;
-
-    }
-
-
-    #sectionR1 {
-        grid-area: sc1;
-        margin-top: 5%;
-        margin-left: 8%;
-        margin-right: 8%;
-        margin-bottom: 3%;
-        display: flex;
-        background-color: lightgray;
-        border-radius: 6px;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 10px;
-        justify-content: space-evenly;
-    }
-
-    #sectionR2 {
-        grid-area: sc2;
-        display: flex;
-        padding-left: 5%;
-        padding-right: 5%;
-        width: 225px;
-        height: 30px;
-        margin: auto;
-        gap: 3%;
-        justify-content: center;
-        align-items: center;
-        background-color: #d3d3d3;
-        border-radius: 10px;
-    }
-
-    #sectionR3 {
-        grid-area: sc3;
-        margin: 2%;
-        background-color: lightgray;
-    }
-
-    #sectionR4 {
-        grid-area: sc4;
-        flex-wrap: wrap;
-        flex-direction: row;
-        display: flex;
-        justify-content: space-evenly;
-        margin-top: 15px;
-    }
-
-    .latestrollred {
-        width: 20px;
-        height: 20px;
-        border-radius: 5px;
-        background-color: red;
-        
-    }
-
-    .latestrollgreen {
-        width: 20px;
-        height: 20px;
-        border-radius: 5px;
-        background-color: rgb(26, 210, 26);
-        
-    }
-    
-    .latestrollblack {
-        width: 20px;
-        height: 20px;
-        border-radius: 5px;
-        background-color: black;
-        
-    }
-
-    .rollbar {
-        width: 1px;
-        background-color: black;
-        grid-area: sc1;
-        
-    }
-
-
-    #PlaceBet {
-        display: flex;
-        padding-left: 8px;
-        margin: 5px;
-        padding-bottom: 10px;
-        padding-top: 10px;
-        color: #ffffff;
-    }
-
-    #AdjustBet {
-        display: flex;
-        flex-direction: row; 
-        height: 19px ;
-        overflow: hidden; 
-        gap: 2%; 
-        align-items: center;
-        justify-content: center;
-        flex-wrap: nowrap;
-        color: white;
-    
-    }
-    
-    .AdjustBetBox {
-        display: flex;
-        justify-content: center;
-        height: 30px;
-        width: 60px; 
-        border-radius: 10px;
-        background-color: gray;
-        align-items: center;
-    }
-
-    #BetAmount {
-        display: flex;
-        height: 50px;
-        margin-left: 30px;
-        margin-right: 30px;
-        margin-top: 20px;
-        background-color: gray;
-        align-items: center;
-        padding-left: 10px;
-        border-radius: 5px;
-        color: white;
-    }
-
-    #HalfDoubleContainer {
-        margin-top: 20px;
-        display: flex;
-        height: 20px;
-        margin-left: 30px;
-        margin-right: 30px;        
-        justify-content: center;
-        gap: 40px;
-
-        
-    }
-
-    .HalfDouble {
-        height: 40px;
-        width: 140px;
-        background-color: #808080;
-        border-radius: 5px;
-        padding-left:10px;
-        color: white;
-        align-content: center;
-
-        
-    }
-
-    .betred {
-        height: 100px;
-        width: 100px;
-        background-color:red;
-        border-radius: 15px;
-        
-    }
-   
-    .betblack {
-        height: 100px;
-        width: 100px;
-        background-color:black;
-        border-radius: 15px;
-        
-    }
-
-    .betgreen {
-        height: 100px;
-        width: 100px;
-        background-color:rgb(26, 210, 26);
-        border-radius: 15px;
-        
-    }
-
-    #sectionL1 {
-        grid-area: sc1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: rgba(255, 23, 23, 0.89);
-        gap: 5px;
-
-    }
-    
-    #sectionL2 {
-        grid-area: sc2;
-        background-color: lightgrey;
-        margin: 7px;
-        justify-items: start;
-        padding-left: 10px;
-        align-items: center;
-        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    }
-
-    #sectionL3 {
-        grid-area: sc3;
-        background-color: lightgrey;
-        margin: 7px;
-        justify-items: start;
-        padding-left: 10px;
-        align-items: center;
-        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    }
-
-    #sectionL4 {
-        grid-area: sc4;
-        background-color: lightgrey;
-        margin: 7px;
-        justify-items: start;
-        padding-left: 10px;
-        align-items: center;
-        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    }
-    
-    #sectionL5 {
-        grid-area: sc5;
-        background-color: lightgray;
-        margin: 7px;
-        justify-items: start;
-        padding-left: 10px;
-        align-items: center;
-        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        
-    }
-
-    #leaderboard{
-        color: rgba(255, 23, 23, 0.89);
-        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        font-weight: lighter;
-        font-size: xx-large;
-    }
-
-    #sectionP1 {
-        grid-area: sc1;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-    
-
-    #ProfileNameEmail {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 3px;
-
-    }
-
-    .ProfileName{
-        padding-top: 2px;
-        margin: 0;
-        font-size: x-large;
-        font-weight: bold;
-        font-family: Georgia, 'Times New Roman', Times, serif
-
-
-    }
-    .ProfileEmail{
-        padding-top: 2px;
-        margin: 0;
-        font-size: x-small;
-        font-weight: bolder;
-        font-family: Georgia, 'Times New Roman', Times, serif
-
-    }
-
-    #EditProfile {
-        display: flex;
-        width: 210px;
-        height: 40px;
-        background-color: #72a4eb;
-        color: white;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-weight: bold;
-        align-items: center;
-        justify-content: center;
-        border-radius: 30px;
-        margin-top: 13px;
-
-    }
-    
-    #sectionP2{
-        grid-area: sc2;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        border-top: 1px solid black;
-        border-bottom: 1px solid black;
-        width: 100%;
-        margin-top: 30px;
-        align-items: start;
-        
-    }
-
-    #ProfileSettings{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding-left: 30px;
-        height: 40px;
-        padding-top: 15px;
-        gap: 8px;
-    }
-
-    #ToggleDarkMode{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding-left: 30px;
-        height: 40px;
-        padding-top:15px;
-        gap: 8px;
-    }
-
-    #ProfileStats{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding-left: 30px;
-        height: 40px;
-        padding-top:15px;
-        gap: 8px;
-        padding-bottom: 15px;
-    }
-
-    .desktop-only {
-        display: none;
-    }
-
+html, body {
+    margin: 0;
+    padding: 0;
 }
-
 
 #center {
     margin: 0;
@@ -461,44 +13,14 @@
     display: inline-block;
 }
 
-
-
-
-
-@media screen and (min-width: 426px) {
-
-    .phone {
-        display: none;
-    }
-
-#container4 {
-    padding: 0;
-    margin: 0;
-    display:grid;
-    height:100vh;
-    
-    grid-template-rows: 12% 18% 5% auto auto; 
-    grid-template-columns: 10% 70% 20%;
-    grid-template-areas:
-    'hd hd hd'
-    'as1 mn as2'
-    'as1 mn as2'
-    'as1 mn as2'
-    'as1 mn as2'; }
-
-
-
-
-}
-
-
 header {
     grid-area: hd;
     display: flex;
     width: 100%;
     background-color: #606060;
-    flex-direction: row-reverse;
     align-items: center;
+    color: rgb(248, 248, 248);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 #RegisterButton {
@@ -513,63 +35,378 @@ header {
     font-size: 25px;
 }
 
-#SignInButton{
+#SignInButton {
     color: white;
     padding-right: 10px;
     font-size: 20px;
-
 }
 
-#AsideLeft {
-    display: flex;
-    grid-area: as1;
-    background-color: #737373;
-    height: 100%;
-    flex-direction: column;
-}
-
-#AccountNav {
-    display: flex;
-    height:fit-content;
-    background-color: #606060;
-    flex-direction: column;
-    width: 80%;
-    margin-top:100px;
+.Spelkort {
+    width: 120px;
+    height: 120px;
+    padding: 10px;
     border-radius: 10px;
-    align-self: center;
 }
 
-#AsideRight {
-    display: flex;
-    grid-area: as2;
-    background-color: #737373;
-    height: 100%;
-    flex-direction: column;
-    justify-content: space-between;
+.latestrollred, .latestrollgreen, .latestrollblack {
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
 }
 
+.latestrollred { background-color: red; }
+.latestrollgreen { background-color: rgb(26, 210, 26); }
+.latestrollblack { background-color: black; }
 
-#SendChat{
+.AdjustBetBox {
     display: flex;
-    flex-direction: row;
-    background-color: #B8B8B8;
-    width: 90%;
-    height: 35px;
-    align-self: flex-end;
-    margin: 5%;
+    justify-content: center;
+    height: 30px;
+    width: 60px; 
     border-radius: 10px;
-    color: #565656;
+    background-color: gray;
     align-items: center;
 }
 
-#ToggleChat{
-    color: #3D3D3D;
-    display: flex;
-    height:24px;
-    margin-top: 25px;
-    align-self: flex-start;
+.HalfDouble {
+    height: 40px;
+    width: 140px;
+    background-color: #808080;
+    border-radius: 5px;
+    padding-left:10px;
+    color: white;
+    align-content: center;
+}
+
+.betred, .betblack, .betgreen {
+    height: 100px;
+    width: 100px;
+    border-radius: 15px;
+}
+
+.betred { background-color: red; }
+.betblack { background-color: black; }
+.betgreen { background-color: rgb(26, 210, 26); }
+
+#sectionL2, #sectionL3, #sectionL4, #sectionL5 {
+    background-color: lightgrey;
+    margin: 7px;
+    padding-left: 10px;
+    align-items: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#leaderboard {
+    color: rgba(255, 23, 23, 0.89);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: lighter;
+    font-size: xx-large;
+}
+
+@media screen and (max-width: 425px) {
+
+    .desktop-only {
+        display: none;
+    }
+
+
+    header {
+        justify-content: center;
+        gap: 40px;
+        height: 100%;
+        background-color: #606060c0 !important;
+    }
+
+    #container1, #container2, #container3, #container4 {
+        padding: 0;
+        margin: 0;
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 100%;
+    }
+
+    #container1 {
+        grid-template-rows: 12% 15% 7% auto 10%; 
+        grid-template-areas: 'hd' 'sc1' 'sc2' 'sc3' 'ft';
+    }
+
+    #container2 {
+        grid-template-rows: 12% 100px 50px 250px auto auto;
+        grid-template-areas: 'hd' 'sc1' 'sc2' 'sc3' 'sc4' 'ft';
+    }
+
+    #container3 {
+        grid-template-rows: 12% 100px 75px 75px 75px auto auto;
+        grid-template-areas: 'hd' 'sc1' 'sc2' 'sc3' 'sc4' 'sc5' 'ft';
+    }
+
+    #container4 {
+        grid-template-rows: 12% auto auto auto auto;
+        grid-template-areas: 'hd' 'sc1' 'sc2' 'sc3' 'ft';
+    }
+
+    #section1 { grid-area: sc1; padding: 15px; border-radius: 9px; }
+
+    #section2 { grid-area: sc2; text-align: center; }
+
+    #section3 {
+        grid-area: sc3;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 35px;
+        text-align: center;
+    }
+
+    #sectionR1 {
+        grid-area: sc1;
+        margin: 5% 8% 3%;
+        display: flex;
+        background-color: lightgray;
+        border-radius: 6px;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: space-evenly;
+    }
+
+    #sectionR2 {
+        grid-area: sc2;
+        display: flex;
+        width: 225px;
+        height: 30px;
+        margin: auto;
+        gap: 3%;
+        justify-content: center;
+        align-items: center;
+        background-color: #d3d3d3;
+        border-radius: 10px;
+        padding: 0 5%;
+    }
+
+    #sectionR3 {
+        grid-area: sc3;
+        margin: 2%;
+        background-color: lightgray;
+    }
+
+    #sectionR4 {
+        grid-area: sc4;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-top: 15px;
+    }
+
+    #PlaceBet, #AdjustBet, #BetAmount, #HalfDoubleContainer {
+        display: flex;
+        margin: 5px 30px 0;
+        color: white;
+    }
+
+    #PlaceBet {
+        padding: 10px 8px;
+    }
+
+    #AdjustBet {
+        flex-direction: row;
+        height: 19px;
+        gap: 2%;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+    #BetAmount {
+        height: 50px;
+        margin-top: 20px;
+        background-color: gray;
+        align-items: center;
+        padding-left: 10px;
+        border-radius: 5px;
+    }
+
+    #HalfDoubleContainer {
+        height: 20px;
+        margin-top: 20px;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    #sectionL1 {
+        grid-area: sc1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgba(255, 23, 23, 0.89);
+        gap: 5px;
+    }
+
+    #sectionP1 {
+        grid-area: sc1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #ProfileNameEmail {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3px;
+    }
+
+    .ProfileName {
+        margin: 0;
+        font-size: x-large;
+        font-weight: bold;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .ProfileEmail {
+        margin: 0;
+        font-size: x-small;
+        font-weight: bolder;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    #EditProfile {
+        display: flex;
+        width: 210px;
+        height: 40px;
+        background-color: #72a4eb;
+        color: white;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: bold;
+        align-items: center;
+        justify-content: center;
+        border-radius: 30px;
+        margin-top: 13px;
+    }
+
+    #sectionP2 {
+        grid-area: sc2;
+        display: flex;
+        flex-direction: column;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        width: 100%;
+        margin-top: 30px;
+        align-items: start;
+    }
+
+    #ProfileSettings, #ToggleDarkMode, #ProfileStats {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-left: 30px;
+        height: 40px;
+        padding-top: 15px;
+        gap: 8px;
+    }
+
+    #ProfileStats {
+        padding-bottom: 15px;
+    }
+
+    .desktop-only {
+        display: none;
+    }
 }
 
 
 
 
+
+
+
+
+
+@media screen and (min-width: 426px) {
+    .phone {
+        display: none;
+    }
+
+    #container4 {
+        padding: 0;
+        margin: 0;
+        display: grid;
+        height: 100vh;
+        grid-template-rows: 12% 18% 5% auto auto; 
+        grid-template-columns: 10% 70% 20%;
+        grid-template-areas:
+            'hd hd hd'
+            'as1 mn as2'
+            'as1 mn as2'
+            'as1 mn as2'
+            'as1 mn as2';
+    }
+
+    #container2 {
+        padding: 0;
+        margin: 0;
+        display: grid;
+        height: 100vh;
+        grid-template-rows: 12% 18% 5% auto auto; 
+        grid-template-columns: 10% 70% 20%;
+        grid-template-areas:
+            'hd hd hd'
+            'as1 mn as2'
+            'as1 mn as2'
+            'as1 mn as2'
+            'as1 mn as2';
+    }
+
+    header {
+        flex-direction: row-reverse;
+    }
+
+    #AsideLeft {
+        display: flex;
+        grid-area: as1;
+        background-color: #737373;
+        height: 100%;
+        flex-direction: column;
+    }
+
+    #AccountNav {
+        display: flex;
+        height: fit-content;
+        background-color: #606060;
+        flex-direction: column;
+        width: 80%;
+        margin-top: 100px;
+        border-radius: 10px;
+        align-self: center;
+    }
+
+    #AsideRight {
+        display: flex;
+        grid-area: as2;
+        background-color: #737373;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #SendChat {
+        display: flex;
+        flex-direction: row;
+        background-color: #B8B8B8;
+        width: 90%;
+        height: 35px;
+        align-self: flex-end;
+        margin: 5%;
+        border-radius: 10px;
+        color: #565656;
+        align-items: center;
+    }
+
+    #ToggleChat {
+        color: #3D3D3D;
+        display: flex;
+        height: 24px;
+        margin-top: 25px;
+        align-self: flex-start;
+    }
+}

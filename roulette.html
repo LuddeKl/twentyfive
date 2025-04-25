@@ -11,12 +11,15 @@
 <body id="container2" class="phone">
 
         <header>
-            <div class="material-symbols-outlined" style="font-size: 36px;">menu</div>
-            <h1 id="center">Gambling</h1>
-            <div class="material-symbols-outlined" style="font-size: 36px;">account_circle</div>
+            <span class="material-symbols-outlined" class="phone" style="font-size: 36px;">menu</span>
+            <h1 id="center" class="phone">Gambling</h1>
+            <span class="material-symbols-outlined" class="phone" style="font-size: 36px;">account_circle</span>
+      
+            <span id="RegisterButton" class="desktop-only">Register</span>
+            <h2 id="SignInButton" class="desktop-only">Sign in</h2>
         </header>
 
-        <section id="sectionR1">
+        <section id="sectionR1" class="phone">
             <div class="rollbar"> </div>
             <div class="rollbar"> </div>
             <div class="rollbar"> </div>
@@ -24,7 +27,7 @@
             <div class="rollbar"> </div>
         </section>
 
-        <section id="sectionR2">
+        <section id="sectionR2" class="phone">
             <div class="latestrollblack"></div>
             <div class="latestrollblack"></div>
             <div class="latestrollgreen"></div>
@@ -36,7 +39,7 @@
 
         </section>
 
-        <section id="sectionR3">
+        <section id="sectionR3" class="phone">
             <h2 id="PlaceBet">Place Bet</h2>
             <div id="AdjustBet">
                 <div class="AdjustBetBox">+1</div>
@@ -52,11 +55,43 @@
             </div>
         </section>
 
-        <section id="sectionR4">
+        <section id="sectionR4" class="phone">
             <div class="betred"></div>
             <div class="betblack"></div>
             <div class="betgreen"></div>
         </section>
+
+
+        <aside id="AsideLeft" class="desktop-only">
+            <span class="material-symbols-outlined" style="font-size: 36px; padding-top:20px; padding-left: 10px; height:fit-content;">menu</span>
+            <div id="AccountNav">
+              <h2>Account</h2>
+              <h2>Settings</h2>
+            </div>
+          </aside>
+          
+        
+          <aside id="AsideRight" class="desktop-only">
+        
+            <div id="ToggleChat" >
+              <span class="material-symbols-outlined" style="width: 17px;">chevron_right</span>
+              <span class="material-symbols-outlined">chat_bubble</span>
+        
+            </div>
+        
+        
+        
+            <div id="SendChat" class="desktop-only">
+              <h2 style="padding-left:10px;">Chat</h2>
+              <span class="material-symbols-outlined" style="margin-left: auto; margin-right: 5px;">send</span>
+            </div>
+        
+        
+          </aside>
+
+
+
+
 
 </body>
 
